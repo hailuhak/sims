@@ -26,8 +26,28 @@ public class MainUi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField3 = new javax.swing.JTextField();
         desktopPane = new javax.swing.JDesktopPane();
         jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         openMenuItem = new javax.swing.JMenuItem();
@@ -45,16 +65,132 @@ public class MainUi extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
 
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setText("jTextField1");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
         desktopPane.add(jTextField1);
-        jTextField1.setBounds(10, 10, 240, 50);
+        jTextField1.setBounds(90, 10, 230, 20);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jTextField2);
+        jTextField2.setBounds(90, 100, 64, 22);
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jTextField4);
+        jTextField4.setBounds(90, 70, 64, 22);
+
+        jButton1.setText("Add");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jButton1);
+        jButton1.setBounds(90, 130, 72, 23);
+
+        jLabel1.setText("Usage");
+        desktopPane.add(jLabel1);
+        jLabel1.setBounds(40, 70, 40, 16);
+
+        jLabel2.setText("Appliance");
+        desktopPane.add(jLabel2);
+        jLabel2.setBounds(30, 10, 60, 16);
+
+        jLabel3.setText("Wattage (W)");
+        desktopPane.add(jLabel3);
+        jLabel3.setBounds(10, 40, 70, 16);
+
+        jLabel4.setText("Quantity");
+        desktopPane.add(jLabel4);
+        jLabel4.setBounds(30, 100, 46, 16);
+        desktopPane.add(jTextField5);
+        jTextField5.setBounds(90, 40, 120, 22);
+
+        jTable1.setAutoCreateRowSorter(true);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Light Bulb",  new Double(15.0), "4hr/day",  new Double(5.0), "q"},
+                {"Electeic Stove",  new Double(2000.0), "3hr/day",  new Double(1.0), "180"},
+                {"Electric Iron",  new Double(2000.0), "4hr/month",  new Double(1.0), null}
+            },
+            new String [] {
+                "Applicance", "wattage (W)", "Usage", "Quantity", "consum/Month(K Wh)"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Double.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jTable1.setToolTipText("Light Bulb");
+        jTable1.setName(""); // NOI18N
+        jTable1.setShowGrid(true);
+        jScrollPane1.setViewportView(jTable1);
+
+        desktopPane.add(jScrollPane1);
+        jScrollPane1.setBounds(10, 160, 380, 90);
+
+        jLabel5.setText("Total Consumption");
+        desktopPane.add(jLabel5);
+        jLabel5.setBounds(210, 260, 102, 16);
+
+        jTextField6.setText("197.00");
+        desktopPane.add(jTextField6);
+        jTextField6.setBounds(320, 260, 64, 22);
+
+        jTextField7.setText("1345.50");
+        desktopPane.add(jTextField7);
+        jTextField7.setBounds(320, 290, 64, 22);
+
+        jTextField8.setText("42.00");
+        desktopPane.add(jTextField8);
+        jTextField8.setBounds(320, 320, 64, 22);
+
+        jTextField9.setText("360.12");
+        desktopPane.add(jTextField9);
+        jTextField9.setBounds(320, 350, 64, 22);
+
+        jButton2.setText("Calculate");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        desktopPane.add(jButton2);
+        jButton2.setBounds(229, 380, 150, 23);
+
+        jLabel6.setText("Amount (ETB)");
+        desktopPane.add(jLabel6);
+        jLabel6.setBounds(230, 290, 74, 16);
+
+        jLabel7.setText("Service Charge (ETB)");
+        desktopPane.add(jLabel7);
+        jLabel7.setBounds(198, 320, 120, 16);
+
+        jLabel8.setText("Total Billable Amount (ETB)");
+        desktopPane.add(jLabel8);
+        jLabel8.setBounds(170, 350, 144, 16);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -139,7 +275,9 @@ public class MainUi extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 9, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,6 +295,26 @@ public class MainUi extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,9 +362,29 @@ public class MainUi extends javax.swing.JFrame {
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem openMenuItem;
     private javax.swing.JMenuItem pasteMenuItem;
