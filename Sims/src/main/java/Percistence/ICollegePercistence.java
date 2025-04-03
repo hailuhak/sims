@@ -9,5 +9,5 @@ package Percistence;
  * @author HP
  */
 public interface ICollegePercistence {
-    boolean AddCollage
+    boolean AddCollage();
 }
